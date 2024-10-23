@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        // $(document).ready(function () {
+        //    $("button").click(function(){
+        //     $("div").hide();
+        //    })
+        // });
+
+        //using "id" selector
+        $(document).ready(function () {
+           $("button").click(function(){
+            $("#demo").hide();
+           })
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Youtube</h1>
+    <h2>Never stop learning</h2>
+    <p>Learning website for all</p>
+    <div id="demo">
+        <p>Free Tutorials</p>
+        <p>Quizzes</p>
+</div>
+<button>Hide element using element selector</button>
+</body>
+
+</html>

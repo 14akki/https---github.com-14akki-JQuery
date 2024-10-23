@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#div1").fadeIn();
+                $("#div2").fadeIn("slow");
+                $("#div3").fadeIn(2000);
+                $("#div4").fadeIn("fast");
+            })
+        });
+    </script>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            border: 2px solid yellow;
+            display: none;
+        }
+
+        #div1 {
+            background-color: blue;
+        }
+
+        #div2 {
+            background-color: chartreuse;
+        }
+
+        #div3 {
+            background-color: brown;
+        }
+
+        #div4 {
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>jquery</h1>
+    <p>Four divs will fade in below on clicking this button</p>
+    <button>Fade in and Display Invisible Elements</button>
+
+    <div id="div1">Div1</div>
+    <div id="div2">Div2</div>
+    <div id="div3">Div3</div>
+    <div id="div4">Div4</div>
+</body>
+
+</html>
