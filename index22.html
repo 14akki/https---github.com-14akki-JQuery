@@ -8,9 +8,8 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script>
         $(document).ready(function () {
-            $("#btn").click(function () {
-                // $("h1").append("<em> Website </em>")
-                $("h1").prepend("<p>Demo text</p>")
+            $("button").click(function () {
+                $("h2").css("color", "red")
             })
         });
     </script>
@@ -18,12 +17,15 @@
 
 <body>
     <h1>jquery</h1>
-    <h2>Demo heading</h2>
-    <h2>Demo heading 1</h2>
-    <p>We will append a word in the above heading</p>
-    <p>Click the below button to append</p>
+    <p>this is a demo text</p>
 
-    <button id="btn">PreAppend</button>
+    <h2>jquery2</h1>
+    <p>this is a another demo text</p>
+
+    <h2>jquery3</h1>
+    <p>this is a another demo text</p>
+
+    <button>Set CSS property</button>
 </body>
 
 </html>

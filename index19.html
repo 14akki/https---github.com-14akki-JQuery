@@ -8,22 +8,27 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script>
         $(document).ready(function () {
-            $("#btn").click(function () {
-                // $("h1").append("<em> Website </em>")
-                $("h1").prepend("<p>Demo text</p>")
+            $("button").click(function () {
+                $("h1,h2").toggleClass("demo")
             })
         });
     </script>
+    <style>
+        .demo {
+            background: red;
+            color: aliceblue;
+        }
+    </style>
 </head>
 
 <body>
     <h1>jquery</h1>
-    <h2>Demo heading</h2>
-    <h2>Demo heading 1</h2>
-    <p>We will append a word in the above heading</p>
-    <p>Click the below button to append</p>
+    <p>This is a demo text</p>
 
-    <button id="btn">PreAppend</button>
+    <h2>Heading 2</h2>
+    <p>This is a demo text 2</p>
+
+    <button>Toggle a class</button>
 </body>
 
 </html>

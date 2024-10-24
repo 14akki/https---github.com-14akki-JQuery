@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+           $("#btn").click(function(){
+            $("p").remove()
+           }) 
+        });
+    </script>
+    <style>
+        p{
+            height: 150px;
+            width: 150px;
+            border: 1px solid black;
+            background: blue;
+            color: aliceblue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>jquery</h1>
+    <p>We will remove this line</p>
+    <p>We will remove this line as well. Click the below button to remove both the lines.</p>
+
+    <button id="btn">Remove</button>
+</body>
+
+</html>

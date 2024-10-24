@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                var txt = "";
+                txt += "Width = " + $(".demo").width();
+                $(".demo").html(txt);
+            })
+        });
+    </script>
+</head>
+<style>
+    .demo {
+        height: 130px;
+        width: 400px;
+        padding: 15px;
+        margin: 12px;
+        border: 2px solid yellow;
+        background: orangered;
+        color: white;
+        font-size: 30px;
+    }
+
+    button {
+        background: black;
+        color: white;
+        font-size: 25px;
+    }
+</style>
+
+<body>
+    <h1>jquery</h1>
+    <h2>Get the Width</h2>
+
+    <div class="demo"></div>
+
+    <button>Width</button>
+
+    <p>Click the above button to get the width of the box.</p>
+</body>
+
+</html>
