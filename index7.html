@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("div").animate({
+                    left: '200px',
+                    height: '100px',
+                    width: '100px',
+                    fontSize: '15px',
+                });
+            })
+        });
+    </script>
+    <style>
+        div {
+            background: red;
+            border: 2px solid blue;
+            height: 200px;
+            width: 200px;
+            color: aliceblue;
+            text-align: center;
+            font-size: 25px;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>jquery</h1>
+    <button>Animate</button>
+    <p>Click the above button to animate the below box:</p>
+    <div>This box will get animated and properties will also change.</div>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                alert($('#demo').text());
+            });
+            $("#btn2").click(function () {
+                alert($('#demo').html());
+            });
+        });
+    </script>
+</head>
+<style>
+    #demo {
+        background: black;
+        color: aliceblue;
+        font-size: 22px;
+    }
+
+    button {
+        background: red;
+        color: aliceblue;
+        font-size: 30px;
+        text-align: center;
+        padding: 15px;
+    }
+</style>
+
+<body>
+    <h1>jquery</h1>
+    <p id="demo">This is a <em>demo text</em>.This is another <strong>demo text</strong></p>
+    <p>Click the below button to get the text content of the HTML content of the above</p>
+    <button id="btn1">Text</button>
+    <button id="btn2">HTML</button>
+</body>
+
+</html>

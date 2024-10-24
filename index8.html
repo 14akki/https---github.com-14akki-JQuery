@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("div").find("li").css({ "background": "skyblue", "color": "blue", "border": "2px solid red" })
+        });
+    </script>
+    <style>
+        .ancestor * {
+            display: block;
+            border: 4px dashed black;
+            font-size: 20px;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>jquery</h1>
+    <div class="ancestor">
+        <div style="width: 600px;">div (great grandparent)
+            <ul>ul (grandparent)
+                <li>li (parent)
+                    <span>span</span>
+                    <span>span</span>
+                </li>
+                <li>li</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
